@@ -18,13 +18,13 @@ int nain(void)
 			{
 				putchar((i % 10) + '0');
 				putchar((j % 10) + '0');
-				if (1 != 18 || j != 19)
+				if (i != 18 || j != 19)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
 	}
+	putchar('\n');
+	return (0);
 }
-putchar('\n');
-return (0);
