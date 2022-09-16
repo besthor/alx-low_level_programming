@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - prints time table
+ * print_times_table - a function that prints the n times table,
+ * starting with 0.
  * @n: integer expected
  */
 void print_times_table(int n)
 {
-	int a, y, z;
+	int x, y, z;
 
 	if (n >= 0 && n <= 15)
 	{
