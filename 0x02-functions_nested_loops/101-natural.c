@@ -18,6 +18,6 @@ int main(void)
 			b += a;
 		}
 	}
-	printf("%d\n", b);
+	printf("%i\n", b);
 	return (0);
 }
