@@ -1,60 +1,40 @@
 #include <stdio.h>
 
 /**
- * numLength - returns the lenght of string
- * @num: operand number
- * Return: number of digits
+ * main - a program that finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2, followed by a new line
+ * Return: 0 always
  */
-int numLength(int num)
-{
-	int length = 0;
-
-	if (!num)
-	{
-		return (1);
-	}
-	while (num)
-	{
-		num = num / 10;
-		lenght += 1;
-	}
-	return (length);
-}
-/**
- * main - prints the first 98 fibonacci sequences
- * Return: 0
- */
-
 int main(void)
 {
-	unsigned long f1 = 1, f2 = 2, tmp, mx = 1000000000, f1o = 0, f2o = 0, tmpo = 0;
-	short int i = 1, initial0s;
+	unsigned long int i, j, k, j1, j2, k1, k2;
 
-	while (i <= 98)
+	j = 1;
+	k = 2;
+
+	printf("%lu", j);
+
+	for (i = 1; i < 91; i++)
 	{
-		if (f1o > 0)
-			printf("%lu", f1o);
-		initial0s = numLength(mx) - 1 - numLength(f1);
-		while (f1o > 0 && initial0s > 0)
-		{
-			printf("%i", 0);
-			initial0s--;
-		}
-		printf("%lu", f1);
-
-		tmp = (f1 + f2) % mx;
-		tmpo = f1o + f2o + (f1 + f2) / mx;
-		f1 = f2;
-		f1o = f2o;
-		f2 = tmp;
-		f2o = tmpo;
-
-		if (i != 98)
-			printf(", ");
-		else
-			printf("\n");
-		i++;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
 	}
+
+	j1 = j / 1000000000;
+	j2 = j % 1000000000;
+	k1 = k / 1000000000;
+	k2 = k % 1000000000;
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", k1 + (k2 / 1000000000));
+		printf("%lu", k2 % 1000000000);
+		k1 = k1 + j1;
+		j1 = k1 - j1;
+		k2 = k2 + j2;
+		j2 = k2 - j2;
+	}
+	printf("\n");
 	return (0);
 }
-
