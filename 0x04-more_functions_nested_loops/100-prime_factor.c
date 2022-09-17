@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include "main.h"
 /**
  * main -  prints the largest prime factor of a number
