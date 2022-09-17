@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
  * main -  prints the largest prime factor of a number
  *
@@ -7,19 +7,22 @@
  */
 int main(void)
 {
-	long num = 612852475143;
-	long divisor = 2;
-	long larg_prim = 0;
+	long number = 612852475143;
+	int inc;
 
-	while (num != 1)
+	while (inc++ < number / 2)
 	{
-		if (num % divisor == 0)
+		if (number % inc == 0)
 		{
-			num = num / divisor;
-			large_prim = divisor;
+			number /= 2;
+			continue;
 		}
-		divisor += 1;
+		for (inc = 3; inc < number / 2; inc += 2)
+		{
+			if (number % inc == 0)
+				number /= inc;
+		}
 	}
-	printf("%ld\n", larg_prim);
+	printf("%d\n", number);
 	return (0);
 }
