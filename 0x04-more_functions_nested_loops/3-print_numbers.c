@@ -6,6 +6,7 @@
  * 0 to 9
  * Return: returns nothing
  */
+
 void print_numbers(void)
 {
 	int n;
