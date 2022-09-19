@@ -5,26 +5,20 @@
 /**
  * puts_half - This function prints half of a string foloowed by a new line.
  * @str: pointer parameter
- * Return: returns 0
  */
 
 void puts_half(char *str)
 {
-	int count = 0, i;
+	int i;
+	int oE = 0;
 
-	while (count >= 0)
+	if (_strlen(str) % 2 != 0)
 	{
-		if (str[count] == '\0')
-			break;
-		count++;
+		oE += 1;
 	}
-	if (count % 2 == 1)
-		i = count / 2;
-	else
-		i = (count - 1) / 2;
-
-	for (i++; i < count; i++)
+	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
+	{
 		_putchar(str[i]);
-
-	_putchar('\n')
+	}
+	_putchar('\n');
 }
