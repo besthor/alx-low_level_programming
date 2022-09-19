@@ -5,7 +5,7 @@
  * rev_string - Reverse a string
  * @s: string to be reversed
  *
- * Return: returns 0
+ * Return: returns nothing
  */
 
 void rev_string(char *s)
@@ -33,5 +33,6 @@ int _strlen(char *s)
 
 	while (*(s + len) != '\0')
 		len++;
+
 	return (len);
 }
