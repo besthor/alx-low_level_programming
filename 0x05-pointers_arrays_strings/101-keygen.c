@@ -20,7 +20,7 @@ int main(void)
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c ));
-	printf("Tada! Congrats"\n');
+	printf("Tada! Congrats\n", (2772 - c ));
+
 	return (0);
 }
