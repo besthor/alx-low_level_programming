@@ -5,8 +5,8 @@
  * _puts - prints a string
  * @str: string to print
  *
- * Description: prints a sreing
- * On success: return no error
+ * Description: prints a string
+ * Return: return 0
  */
 
 void _puts(char *str)
@@ -18,6 +18,6 @@ void _puts(char *str)
 		putchar(*(str + i));
 		i++;
 	}
-	putchar(0);
+	putchar(10);
 }
 
