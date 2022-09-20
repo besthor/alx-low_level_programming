@@ -11,7 +11,7 @@ int main(void)
 	int r = 0, c = 0;
 	time_t t;
 
-	srand((unsinged int) time(&t));
+	srand((unsigned int) time(&t));
 	while (c < 2772)
 	{
 		r = rand() % 128;
@@ -20,6 +20,6 @@ int main(void)
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c);
+	printf("%c\n", (2772 - c));
 	return (0);
 }
