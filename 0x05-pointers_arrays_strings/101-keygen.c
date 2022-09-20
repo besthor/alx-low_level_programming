@@ -22,6 +22,7 @@ int main(void)
 		printf("%c", r);
 	}
 	printf("%c\n", (2772 - c));
+
 	printf("Tadal! Congrats = %c.\n", chr);
 
 	return (0);
