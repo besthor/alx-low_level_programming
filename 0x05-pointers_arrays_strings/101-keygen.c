@@ -10,6 +10,7 @@ int main(void)
 {
 	int r = 0, c = 0;
 	time_t t;
+	char chr;
 
 	srand((unsigned int) time(&t));
 	while (c < 2772)
@@ -20,7 +21,8 @@ int main(void)
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c ));
+	printf("%c\n", (2772 - c));
+	printf("Tadal! Congrats = %c.\n", chr);
 
 	return (0);
 }
