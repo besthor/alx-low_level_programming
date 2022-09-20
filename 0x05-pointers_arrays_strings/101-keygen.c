@@ -3,16 +3,15 @@
 #include <time.h>
 /**
  * main - generates keygen.
- * Return: return 0 always
+ * Return: return 0 always.
  */
 
 int main(void)
 {
 	int r = 0, c = 0;
 	time_t t;
-	char chr;
 
-	srand((unsigned int) time(&t));
+	srand((unsinged int) time(&t));
 	while (c < 2772)
 	{
 		r = rand() % 128;
@@ -21,9 +20,6 @@ int main(void)
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2772 - c));
-
-	printf("Tadal! Congrats = %c.\n", chr);
-
+	printf("%c\n", (2772 - c);
 	return (0);
 }
