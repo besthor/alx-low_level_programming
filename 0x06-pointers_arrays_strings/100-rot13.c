@@ -7,7 +7,7 @@
  * Return: string 's' rotated
  */
 
-char *rot13(char *)
+char *rot13(char *s)
 {
 	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
 	char part2[52] = "nNoOpPqQrRsStTuUvVWwXxYyZzaAdDcCdDeEfFgGhHiIjJkKlLmM";
