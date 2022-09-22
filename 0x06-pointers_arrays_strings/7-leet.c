@@ -4,24 +4,23 @@
 /**
  * leet -  transform to leet
  * @s: char array string type
- * Return: s transformed
+ * Return: the resulting string;
  */
 
 char *leet(char *s)
 {
-	int i, ii;
-	char s1[] = "aeotl";
-	char s1[] = "AEOTL";
-	char s2[] = "43071";
+	int i, j;
+
+	char *a = "aAeEOotTlL";
+	char *b = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (ii = 0; ii < 5; ii++)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == s1[ii]  ||  s1[ii])
+			if (s[i] == a[j])
 			{
-				s[i] = s2[ii];
-				break;
+				s[i] = b[j];
 			}
 		}
 	}
