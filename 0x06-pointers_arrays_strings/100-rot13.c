@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rot13 - rotate haracters 13 places in the alphabet
@@ -6,7 +7,7 @@
  * Return: string 's' rotated
  */
 
-char *rot13(char *s)
+char *rot13(char *)
 {
 	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
 	char part2[52] = "nNoOpPqQrRsStTuUvVWwXxYyZzaAdDcCdDeEfFgGhHiIjJkKlLmM";
