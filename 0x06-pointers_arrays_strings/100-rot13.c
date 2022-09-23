@@ -1,28 +1,39 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - rotate characters 13 places in the alphabet
- * @s: string to encrypt
- * Return: string 's' rotated
+ * *rot13 - encodes strings using rot13.
+ * @s: pointer to string
+ *
+ * Return: pointer to encoded string
  */
-
 char *rot13(char *s)
 {
-	int i, j;
-	char a[] = "ABCDEFGHIJLLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[] = "NOPQRSTUVWXYZABCDEFGHIKJLMopqrstuvwxyzabcdefghijklm";
+	int stringCount, rotation;
 
-	for (i = 0; s[i] != '\0'; i++)
+	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+
+		'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		'Z'};
+
+	char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		'M'};
+	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 	{
-		for (j = 0; a[j] != '\0'; j++)
+		for (rotation = 0; rotation < 53; rotation++)
 		{
-			if (s[i] == a[j])
+			if (r1[rotation] == s[stringCount])
 			{
-				s[i] = b[j];
+				s[stringCount] = r2[rotation];
+
 				break;
 			}
 		}
 	}
+
 	return (s);
 }
