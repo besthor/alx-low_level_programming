@@ -1,4 +1,5 @@
-i#include "main.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
  * *_memset - fills memory with a constant byte,
