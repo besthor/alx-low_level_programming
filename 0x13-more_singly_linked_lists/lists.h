@@ -1,8 +1,9 @@
 #ifndef _LISTS_
-#define _LISTS_	
+#define _LISTS_
 
 #include <stdio.h>
 #include <stdlib.>
+#include "lists.h"
 
 /**
  * struct listint_s - singly linked list
@@ -13,7 +14,7 @@
  */
 typedef struct listint_s
 {
-	intn;
+	int n;
 	struct listint_s *next;
 } listint_t;
 
@@ -24,11 +25,11 @@ typedef struct listint_s
  *
  * Description: singly linked list of pointers
  */
-typdef struct listp_s
+typedef struct listp_s
 {
 	void *p;
 	struct listp_s *next;
-} lsistp_t;
+} listp_t;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
