@@ -1,7 +1,7 @@
 # General
 # Why C programming is awesome
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fc-programming-tutorial%2F&psig=AOvVaw1MBSo8jydF1TKpfEL9YzdK&ust=1676974101822000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOD53MHto_0CFQAAAAAdAAAAABAJ)
+![](https://www.edureka.co/blog/wp-content/uploads/2019/08/C-Programming-Tutorial-Features-of-C-Edureka.pngJ)
 
 Who invented C
 
