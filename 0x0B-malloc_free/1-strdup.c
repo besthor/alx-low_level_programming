@@ -16,22 +16,28 @@ char *_strdup(char *str)
 	int i;
 	int len;
 
+	/* checking if the string is a NULL */
 	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
 		len++;
+	/* allocating memory for the new string */
 	ptr = malloc(sizeof(char) * (len + 1));
 
+	/* checking if memory was succesfull */
 	if (ptr == NULL)
-		return (NULL); /* Checking for malloc */
+		return (NULL);
 
+	/* copying the contents of the string to the new string */
 	for (i = 0; str[i]; i++)
 	{
 		ptr[i] = str[i];
 	}
 
+	/* adding the NULL terminator character */
 	ptr[len] = '\0';
 
+	/* return the pointer to the new string */
 	return (ptr);
 }
