@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "string.h"
 /**
  * _strdup - returns a pointer to a newly allocated
  * space in memory, which contains a copy of the
@@ -12,25 +12,24 @@
 
 char *_strdup(char *str)
 {
-	char *cpy;
-	int index, len;
+	char *ptr;
+	int i = 0;
+	int len;
 
-	if (str == NULL)
-		return (NULL);
+	len = strlen(str);
 
-	for (index = 0; str[index]; index++)
-		len++;
-	cpy = malloc(sizeof(char) * (len + 1));
+	ptr = malloc((len + 1) * sizeof(char));
 
-	if (cpy == NULL)
-		return (NULL);
-
-	for (index = 0; str[index]; index++)
+	if (ptr == NULL)
 	{
-		cpy[index] = str[index];
+		return (NULL); /* Checking for malloc */
 	}
 
-	cpy[len] = '\0';
-
-	return (cpy);
+	while (i < len)
+	{
+		*(ptr + i) = *(str + i);
+		i++;
+	}
+	ptr[len] = '\0';
+	return (ptr);
 }
