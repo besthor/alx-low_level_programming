@@ -17,9 +17,10 @@ int main(void)
 	{
 		if (ch != 'e' && ch != 'q')
 		{
-			putchar(ch);
+			putchar(ch); /* Print the character if it is not 'e' or 'q' */
 		}
 	}
-	putchar('\n');
-	return (0);
+	putchar('\n'); /* Print a new line after printing the alphabet */
+	
+	return (0); /* program has executed successfully */
 }
