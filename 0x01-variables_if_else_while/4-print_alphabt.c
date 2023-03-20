@@ -21,6 +21,6 @@ int main(void)
 		}
 	}
 	putchar('\n'); /* Print a new line after printing the alphabet */
-	
+
 	return (0); /* program has executed successfully */
 }
