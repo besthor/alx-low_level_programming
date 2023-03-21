@@ -5,25 +5,36 @@
  * starting with 1 and 2, followed by a new line
  * Return: 0 always
  */
-
 int main(void)
 {
-	unsigned long int i, j = 1, k = 2, t;
+    unsigned long int i, j = 1, k = 2;
+    unsigned long int j1, j2, k1, k2;
 
-	/* print first 2 numbers of Fibonacci sequence */
-	printf("%lu, %lu", j, k);
+    printf("%lu", j);
+    for (i = 1; i < 91; i++)
+    {
+        printf(", %lu", k);
+        k += j;
+        j = k - j;
+    }
 
-	/* generate and print next 96 numbers of Fibonacci sequence */
-	for (i = 3; i <= 98; i++)
-	{
-		t = j + k;
-		printf(", %lu", t);
-		j = k;
-		k = t;
-	}
+    j1 = j / 1000000000;
+    j2 = j % 1000000000;
+    k1 = k / 1000000000;
+    k2 = k % 1000000000;
 
-	/* print newline character */
-	printf("\n");
+    for (i = 92; i < 100; i++)
+    {
+        printf(", %010lu", k1 + k2 / 1000000000);
+        printf("%010lu", k2 % 1000000000);
 
-	return (0);
+        k1 += j1;
+        j1 = k1 - j1;
+        k2 += j2;
+        j2 = k2 - j2;
+    }
+
+    printf("\n");
+
+    return 0;
 }
