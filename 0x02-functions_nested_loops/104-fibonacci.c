@@ -13,7 +13,7 @@ int main(void)
     unsigned long numx;
 
     printf("%lu, %lu", num1, num2);
-    for (i = 3; i <= 98; i++)
+    for (i = 1; i <= 91; i++)
     {
         numx = num1 + num2;
         printf(", %lu", numx);
