@@ -7,25 +7,21 @@
  */
 int main(void)
 {
-	int i;
+    int i;
+    unsigned long num1 = 1;
+    unsigned long num2 = 2;
+    unsigned long numx;
 
-	unsigned long num1 = 1;
-	unsigned long num2 = 2;
-	unsigned long numx;
+    printf("%lu, %lu", num1, num2);
+    for (i = 3; i <= 98; i++)
+    {
+        numx = num1 + num2;
+        printf(", %lu", numx);
 
-	for (i = 3; i <= 96; i++)
-	{
-		printf("%lu", num1);
+        num1 = num2;
+        num2 = numx;
+    }
+    printf("\n");
 
-		numx = num1 + num2;
-		num1 = num2;
-		num2 = numx;
-
-		if (i != 97)
-			printf(", ");
-	}
-
-	printf("\n");
-
-	return (0);
+    return 0;
 }
