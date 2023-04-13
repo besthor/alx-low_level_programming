@@ -13,5 +13,8 @@ Read or watch:
 - What is the best search algorithm to use depending on your needs
 #
 ![](https://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif)
-
-![](https://blog.penjee.com/wp-content/uploads/2015/12/optimal-binary-search-tree-from-sorted-array.gif)  ![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
+#
+![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
+#
+![](https://blog.penjee.com/wp-content/uploads/2015/12/optimal-binary-search-tree-from-sorted-array.gif)
+#
