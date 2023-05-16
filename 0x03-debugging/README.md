@@ -1,5 +1,9 @@
-What is debugging
+# `Debugging`
 
-What are some methods of debugging manually
+![](https://cdn.educba.com/academy/wp-content/uploads/2019/09/What-is-Debugging.png)
 
-How to read the error messages
+- What is debugging?
+
+- What are some methods of debugging manually?
+
+- How to read the error messages?
